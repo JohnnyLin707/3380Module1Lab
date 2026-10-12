@@ -55,7 +55,10 @@ python -m http.server 8000
 │   └── app.js              # 交互逻辑（渲染、填空、提示、答案、进度）
 ├── references/
 │   └── lab1-original.js    # 原始 lab1.js 参考答案
-└── .github/workflows/deploy-pages.yml   # 自动部署到 GitHub Pages
+└── README.md
+
+> 发布方式：GitHub 仓库 Settings → Pages → Source 选择 `Deploy from a branch`，Branch 选 `main` / `/(root)`，保存后即可访问
+> https://johnnylin707.github.io/3380Module1Lab/
 ```
 
 ## 修改题库 Edit questions
