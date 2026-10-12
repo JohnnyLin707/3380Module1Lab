@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3380 Module 1 · JS Refresher Review 复习题</title>
+  <meta name="description" content="JavaScript 复习题库：中英双语题目 + 提示填空 + 一键显示中英对照答案" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="brand-badge">JS</div>
+        <div class="brand-text">
+          <h1>JavaScript Refresher · Module 1 Review</h1>
+          <p>JS 基础复习题库 · 中英双语题目 · 提示填空 · 一键查看答案</p>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <button id="themeToggle" class="btn ghost" type="button" title="切换深色 / 浅色模式">🌙 夜间模式</button>
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <input id="searchBox" class="search" type="search" placeholder="搜索题目 / 关键字（如 reduce、解构、template）…" aria-label="搜索题目" />
+      <div class="filters" role="group" aria-label="过滤">
+        <button class="chip-btn active" data-filter="all" type="button">全部 All</button>
+        <button class="chip-btn" data-filter="todo" type="button">未掌握 To review</button>
+        <button class="chip-btn" data-filter="done" type="button">已掌握 Mastered</button>
+      </div>
+      <div class="toolbar-right">
+        <button id="showAll" class="btn soft" type="button">👀 显示全部答案</button>
+        <button id="hideAll" class="btn soft" type="button">🙈 全部隐藏</button>
+        <button id="resetAll" class="btn ghost" type="button">🔄 重置练习</button>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-bar"><span id="progressFill"></span></div>
+      <span id="progressText" class="progress-text">0 / 0 已掌握</span>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <nav id="nav" aria-label="章节导航"></nav>
+      <div class="sidebar-tip">
+        <strong>How to use 使用说明</strong>
+        <ol>
+          <li>先读中英双语题目</li>
+          <li>点「💡 提示」逐级获得线索</li>
+          <li>在 <span class="inline-blank">____</span> 处填空，点「✅ 检查」自测</li>
+          <li>点「📖 显示答案」查看完整原文 + 中文对照讲解</li>
+          <li>掌握后点「★ 标记已掌握」记录进度</li>
+        </ol>
+      </div>
+    </aside>
+
+    <main id="content" class="content"></main>
+  </div>
+
+  <footer class="footer">
+    <p>3380 Full Stack Development with JavaScript — Module 1 JS Refresher Lab &nbsp;|&nbsp; 本机/浏览器缓存保存学习进度</p>
+  </footer>
+
+  <script src="assets/questions.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
